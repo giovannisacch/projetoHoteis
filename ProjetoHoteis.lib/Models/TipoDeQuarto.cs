@@ -1,6 +1,8 @@
+using ProjetoHoteis.lib.Exceptions;
+
 namespace ProjetoHoteis.lib.Models
 {
-    public class TipoDeQuarto
+    public class TipoDeQuarto : ModelBase
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }
@@ -9,7 +11,7 @@ namespace ProjetoHoteis.lib.Models
         public int CamasSolteiro { get; set; }
         public double Valor { get; set; }
 
-        public TipoDeQuarto(string nome, string descricao, int ocupacaoMaxima, int camasCasal, int camasSolteiro, double valor)
+        public TipoDeQuarto(int id, string dataCriacao, string ultimaVez, string nome, string descricao, int ocupacaoMaxima, int camasCasal, int camasSolteiro, double valor) : base (id, dataCriacao, ultimaVez)
         {
             SetNome(nome);
             SetDescricao(descricao);
@@ -43,7 +45,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetOcupacaoMaxima(int ocupacaoMaxima)
         {
-            OcupacaoMaxima = ocupacaoMaxima;
+            if (ocupacaoMaxima <= (CamasSolteiro + (2 * CamasCasal)))
+            {
+                OcupacaoMaxima = ocupacaoMaxima;
+            }
+            else
+            {
+                throw new InputInvalidoException("A ocupação mámixa não pode ser maior que a capacidade do quarto");
+            }
         }
 
         public int GetCamasCasal()

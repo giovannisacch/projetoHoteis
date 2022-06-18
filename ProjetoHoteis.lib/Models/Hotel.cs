@@ -1,6 +1,8 @@
+using ProjetoHoteis.lib.Exceptions;
+
 namespace ProjetoHoteis.lib.Models
 {
-    public class Hotel
+    public class Hotel : ModelBase
     {
         public string Nome { get; set; }
         public string Endereco { get; set; }
@@ -11,7 +13,7 @@ namespace ProjetoHoteis.lib.Models
         public DateTime Checkin { get; set; }
         public DateTime Checkout { get; set; }
 
-        public Hotel(string nome, string endereco, string cep, string descricao, string telefone, string email, string checkin, string checkout)
+        public Hotel(int id, string dataCriacao, string ultimaVez, string nome, string endereco, string cep, string descricao, string telefone, string email, string checkin, string checkout) : base (id, dataCriacao, ultimaVez)
         {
             SetNome(nome);
             SetEndereco(endereco);
@@ -65,7 +67,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetTelefone(string telefone)
         {
-            Telefone = telefone;
+            if (telefone.Length <= 14)
+            {
+                Telefone = telefone;
+            }
+            else
+            {
+                throw new InputInvalidoException("O telefone deve ter no máximo 14 dígitos");
+            }
         }
 
         public string GetEmail()
@@ -74,7 +83,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetEmail(string email)
         {
-            Email = email;
+            if (email.Contains("@"))
+            {
+                Email = email;
+            }
+            else
+            {
+                throw new InputInvalidoException("O email deve conter @");
+            }
         }
 
         public DateTime GetCheckin()

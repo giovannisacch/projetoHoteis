@@ -1,6 +1,8 @@
+using ProjetoHoteis.lib.Exceptions;
+
 namespace ProjetoHoteis.lib.Models
 {
-    public class Hospede
+    public class Hospede : ModelBase
     {
         public string Nome { get; set; }
         public string Cpf { get; set; }
@@ -8,7 +10,7 @@ namespace ProjetoHoteis.lib.Models
         public string Telefone { get; set; }
         public DateTime DataNascimento { get; set; }
 
-        public Hospede(string nome, string cpf, string email, string telefone, string dataNascimento)
+        public Hospede(int id, string dataCriacao, string ultimaVez, string nome, string cpf, string email, string telefone, string dataNascimento) : base (id, dataCriacao, ultimaVez)
         {
             SetNome(nome);
             SetCpf(cpf);
@@ -32,7 +34,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetCpf(string cpf)
         {
-            Cpf = cpf;
+            if (cpf.All(char.IsDigit))
+            {
+                Cpf = cpf;
+            }
+            else
+            {
+                throw new InputInvalidoException("cpf deve conter só números");
+            }
         }
 
         public string GetEmail()
@@ -41,7 +50,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetEmail(string email)
         {
-            Email = email;
+            if (email.Contains("@"))
+            {
+                Email = email;
+            }
+            else
+            {
+                throw new InputInvalidoException("O email deve conter @");
+            }
         }
 
         public string GetTelefone()
@@ -50,7 +66,14 @@ namespace ProjetoHoteis.lib.Models
         }
         public void SetTelefone(string telefone)
         {
-            Telefone = telefone;
+            if (telefone.Length <= 14)
+            {
+                Telefone = telefone;
+            }
+            else
+            {
+                throw new InputInvalidoException("O telefone deve ter no máximo 14 dígitos");
+            }
         }
 
         public DateTime GetDataNascimento()
