@@ -12,6 +12,8 @@ namespace ProjetoHoteis.lib.Models
         public string Email { get; set; }
         public DateTime Checkin { get; set; }
         public DateTime Checkout { get; set; }
+        public virtual List<Quarto> Quartos { get; set; }
+        public virtual List<ServicosXHoteis> ServicosXHoteis { get; set; }
 
         public Hotel(int id, string dataCriacao, string ultimaVez, string nome, string endereco, string cep, string descricao, string telefone, string email, string checkin, string checkout) : base (id, dataCriacao, ultimaVez)
         {

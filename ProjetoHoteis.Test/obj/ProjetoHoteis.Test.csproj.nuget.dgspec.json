@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj": {}
+    "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.Test\\ProjetoHoteis.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj": {
+    "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.Test\\ProjetoHoteis.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
-        "projectName": "ProjetoHoteis.lib",
-        "projectPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
+        "projectUniqueName": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.Test\\ProjetoHoteis.Test.csproj",
+        "projectName": "ProjetoHoteis.Test",
+        "projectPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.Test\\ProjetoHoteis.Test.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\obj\\",
+        "outputPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

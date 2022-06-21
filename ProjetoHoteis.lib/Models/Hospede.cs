@@ -9,6 +9,8 @@ namespace ProjetoHoteis.lib.Models
         public string Email { get; set; }
         public string Telefone { get; set; }
         public DateTime DataNascimento { get; set; }
+        public virtual List<Estadia> Estadias { get; set; }
+        public virtual List<EstadiasXHospedes> EstadiasXHospedes { get; set; }
 
         public Hospede(int id, string dataCriacao, string ultimaVez, string nome, string cpf, string email, string telefone, string dataNascimento) : base (id, dataCriacao, ultimaVez)
         {

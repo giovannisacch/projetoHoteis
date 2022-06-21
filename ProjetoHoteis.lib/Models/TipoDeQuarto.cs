@@ -10,6 +10,7 @@ namespace ProjetoHoteis.lib.Models
         public int CamasCasal { get; set; }
         public int CamasSolteiro { get; set; }
         public double Valor { get; set; }
+        public virtual List<Quarto> Quartos { get; set; }
 
         public TipoDeQuarto(int id, string dataCriacao, string ultimaVez, string nome, string descricao, int ocupacaoMaxima, int camasCasal, int camasSolteiro, double valor) : base (id, dataCriacao, ultimaVez)
         {
