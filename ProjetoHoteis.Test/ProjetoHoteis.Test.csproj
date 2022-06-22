@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoHoteis.lib\ProjetoHoteis.lib.csproj" />
+  </ItemGroup>
+
 </Project>

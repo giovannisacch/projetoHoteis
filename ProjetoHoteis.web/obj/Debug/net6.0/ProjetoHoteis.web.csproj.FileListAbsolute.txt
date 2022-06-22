@@ -27,3 +27,17 @@ C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\obj\Debug\net6.0\re
 C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\obj\Debug\net6.0\ProjetoHoteis.web.pdb
 C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\obj\Debug\net6.0\ProjetoHoteis.web.genruntimeconfig.cache
 C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\obj\Debug\net6.0\ref\ProjetoHoteis.web.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Npgsql.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\CaseExtensions.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\EFCore.NamingConventions.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\Marques.EFCorev3.0.SnakeCase.dll
+C:\Users\rafae\projetosDODEV\ProjetoHoteis\ProjetoHoteis.web\bin\Debug\net6.0\SnakeCase.JsonNet.dll

@@ -18,6 +18,10 @@ namespace ProjetoHoteis.lib.Models
             SetIdQuarto(idQuarto);
             SetIdResponsavel(idResponsavel);
         }
+        public Estadia()
+        {
+            
+        }
 
         public void SetIdResponsavel(int idResponsavel)
         {

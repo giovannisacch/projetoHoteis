@@ -14,6 +14,10 @@ namespace ProjetoHoteis.lib.Models
             SetDataCriacao(dataCriacao);
             SetUltimaVez(ultimaVez);
         }
+        public ModelBase()
+        {
+            
+        }
 
         public void SetId(int id)
         {

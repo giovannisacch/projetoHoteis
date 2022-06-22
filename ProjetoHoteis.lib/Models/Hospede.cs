@@ -20,6 +20,10 @@ namespace ProjetoHoteis.lib.Models
             SetTelefone(telefone);
             SetDataNascimento(dataNascimento);
         }
+        public Hospede()
+        {
+            
+        }
 
         public string GetNome()
         {

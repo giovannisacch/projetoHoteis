@@ -26,6 +26,10 @@ namespace ProjetoHoteis.lib.Models
             SetCheckin(checkin);
             SetCheckout(checkout);
         }
+        public Hotel()
+        {
+            
+        }
 
         public string GetNome()
         {

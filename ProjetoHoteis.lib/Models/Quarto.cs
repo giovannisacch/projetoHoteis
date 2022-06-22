@@ -15,6 +15,10 @@ namespace ProjetoHoteis.lib.Models
             SetNumero(numero);
             SetAndar(andar);
         }
+        public Quarto()
+        {
+            
+        }
 
         public int GetNumero()
         {

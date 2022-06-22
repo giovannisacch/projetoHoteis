@@ -9,6 +9,10 @@ namespace ProjetoHoteis.lib.Models
         {
             SetNome(nome);
         }
+        public Servico()
+        {
+            
+        }
 
         public string GetNome()
         {

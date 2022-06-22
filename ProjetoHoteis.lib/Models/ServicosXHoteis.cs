@@ -11,6 +11,10 @@ namespace ProjetoHoteis.lib.Models
             SetIdEstadia(idEstadia);
             SetIdHotel(idHotel);
         }
+        public ServicosXHoteis()
+        {
+            
+        }
 
         public void SetIdEstadia(int idEstadia)
         {

@@ -21,6 +21,10 @@ namespace ProjetoHoteis.lib.Models
             SetCamasSolteiro(camasSolteiro);
             SetValor(valor);
         }
+        public TipoDeQuarto()
+        {
+            
+        }
 
         public string GetNome()
         {

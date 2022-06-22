@@ -89,6 +89,9 @@ namespace ProjetoHoteis.lib.Data
                         .HasMany(x => x.Quartos)
                         .WithOne(x => x.Tipo)
                         .HasForeignKey(x => x.IdTipo); 
+            //EstadiasXHospedes
+            modelBuilder.Entity<EstadiasXHospedes>().ToTable("ht_estadias_x_hospedes");
+            modelBuilder.Entity<EstadiasXHospedes>().HasKey(x => x.Id);
         }
         public DbSet<Estadia> Estadias { get; set; }
         public DbSet<Hospede> Hospedes { get; set; }
