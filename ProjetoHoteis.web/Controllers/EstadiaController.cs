@@ -17,6 +17,7 @@ public class EstadiaController : ControllerBase
     [HttpGet]
     public IActionResult GetTodos()
     {
+    
         return Ok(_repositorio.BuscarTodos());
     }
 

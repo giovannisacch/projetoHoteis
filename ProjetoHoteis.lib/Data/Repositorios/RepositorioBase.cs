@@ -20,7 +20,8 @@ namespace ProjetoHoteis.lib.Data.Repositorios
 
         public T BuscarPorId(int id)
         {
-            return _dbset.AsNoTracking().First(x => x.Id == id);
+            var retorno = _dbset.AsNoTracking().First(x => x.Id == id);
+            return retorno;
         }
 
         public void Adicionar(T item)

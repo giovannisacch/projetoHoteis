@@ -646,19 +646,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rafae\\.nuget\\packages\\": {}
+    "C:\\Users\\sacch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
+      "projectUniqueName": "C:\\Users\\sacch\\OneDrive\\Desktop\\Projetos\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
       "projectName": "ProjetoHoteis.lib",
-      "projectPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
-      "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafae\\projetosDODEV\\ProjetoHoteis\\ProjetoHoteis.lib\\obj\\",
+      "projectPath": "C:\\Users\\sacch\\OneDrive\\Desktop\\Projetos\\ProjetoHoteis\\ProjetoHoteis.lib\\ProjetoHoteis.lib.csproj",
+      "packagesPath": "C:\\Users\\sacch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sacch\\OneDrive\\Desktop\\Projetos\\ProjetoHoteis\\ProjetoHoteis.lib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sacch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -704,7 +704,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

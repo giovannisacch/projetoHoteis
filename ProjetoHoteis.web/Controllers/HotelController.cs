@@ -17,7 +17,8 @@ public class HotelController : ControllerBase
     [HttpGet]
     public IActionResult GetTodos()
     {
-        return Ok(_repositorio.BuscarTodos());
+        var todosHoteis = _repositorio.BuscarTodos();
+        return Ok(todosHoteis);
     }
 
     [HttpGet("{id}")]
