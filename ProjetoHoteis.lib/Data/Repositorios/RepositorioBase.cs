@@ -12,29 +12,33 @@ namespace ProjetoHoteis.lib.Data.Repositorios
             _context = context;
             _dbset = dbset;
         }
-
-        public List<T> BuscarTodos()
+        public async Task<List<T>> BuscarTodosAsync()
         {
-            return _dbset.AsNoTracking().ToList();
+            return await _dbset.AsNoTracking().ToListAsync();
         }
 
-        public T BuscarPorId(int id)
+        public async Task<List<T>> BuscarTodos()
         {
-            var retorno = _dbset.AsNoTracking().First(x => x.Id == id);
+            return await _dbset.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<T> BuscarPorId(int id)
+        {
+            var retorno = await _dbset.AsNoTracking().FirstAsync(x => x.Id == id);
             return retorno;
         }
 
-        public void Adicionar(T item)
+        public async Task Adicionar(T item)
         {
-            _dbset.Add(item);
-            _context.SaveChanges();
+            await _dbset.AddAsync(item);
+            await _context.SaveChangesAsync();
         }
 
-        public void Deletar(int id)
+        public async Task Deletar(int id)
         {
-            var item = _dbset.Find(id);
+            var item = await _dbset.FindAsync(id);
             _dbset.Remove(item);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

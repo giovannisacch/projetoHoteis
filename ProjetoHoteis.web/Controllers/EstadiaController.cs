@@ -15,16 +15,16 @@ public class EstadiaController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetTodos()
+    public async Task<IActionResult> GetTodos()
     {
     
-        return Ok(_repositorio.BuscarTodos());
+        return Ok(await _repositorio.BuscarTodos());
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetPorId(int id)
+    public async Task<IActionResult> GetPorId(int id)
     {
-        return Ok(_repositorio.BuscarPorId(id));
+        return Ok(await _repositorio.BuscarPorId(id));
     }
 
     [HttpPost]
